@@ -18,7 +18,7 @@ spec:
       - name: banking-finance-container
         image: aswin2404/ECAI-app
         ports:
-        - containerPort: 8080
+        - containerPort: 80
 ---
 apiVersion: v1
 kind: Service
@@ -33,5 +33,5 @@ spec:
   type: NodePort
   ports:
   - nodePort: 31030    
-    port: 8080
-    targetPort: 8080
+    port: 80
+    targetPort: 80
